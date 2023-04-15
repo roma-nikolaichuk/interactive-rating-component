@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Interactive rating component challenge by Frontend Mentor. Users should be able to rate a product based on a score rating system."
+    >
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    >
+    <script src="./assets/js/main.js" async defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="sr-only">Interactive rating component</h1>
+
+      <div id="rating-state" class="card">
+        <div class="card__icon">
+          <img src="./assets/images/icon-star.svg" alt="" aria-hidden="true">
+        </div>
+
+        <h2 class="card__title">How did we do?</h2>
+        <p class="card__text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <form class="card__form rating-form">
+          <fieldset class="rating-form__fieldset">
+            <legend class="sr-only">Please select a rating:</legend>
+
+            <label
+              for="rating-1"
+              class="rating-form__label"
+              aria-label="1 star"
+            >
+              <input
+                type="radio"
+                name="rating"
+                id="rating-1"
+                value="1"
+                class="rating-form__input"
+              >
+              <span class="rating-form__circle">1</span>
+            </label>
+
+            <label
+              for="rating-2"
+              class="rating-form__label"
+              aria-label="2 star"
+            >
+              <input
+                type="radio"
+                name="rating"
+                id="rating-2"
+                value="2"
+                class="rating-form__input"
+              >
+              <span class="rating-form__circle">2</span>
+            </label>
+
+            <label
+              for="rating-3"
+              class="rating-form__label"
+              aria-label="3 star"
+            >
+              <input
+                type="radio"
+                name="rating"
+                id="rating-3"
+                value="3"
+                class="rating-form__input"
+              >
+              <span class="rating-form__circle">3</span>
+            </label>
+
+            <label
+              for="rating-4"
+              class="rating-form__label"
+              aria-label="4 star"
+            >
+              <input
+                type="radio"
+                name="rating"
+                id="rating-4"
+                value="4"
+                class="rating-form__input"
+              >
+              <span class="rating-form__circle">4</span>
+            </label>
+
+            <label
+              for="rating-5"
+              class="rating-form__label"
+              aria-label="5 star"
+            >
+              <input
+                type="radio"
+                name="rating"
+                id="rating-5"
+                value="5"
+                class="rating-form__input"
+              >
+              <span class="rating-form__circle">5</span>
+            </label>
+          </fieldset>
+
+          <button
+            id="rating-submit"
+            type="submit"
+            class="btn btn--primary"
+            disabled
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div
+        id="thank-you-state"
+        class="card card--back"
+        aria-live="polite"
+        aria-atomic="true"
+        aria-label="Thank you message for rating submission"
+      >
+        <p class="sr-only">Your rating has been submitted</p>
+
+        <img
+          class="card__thank-you-img"
+          src="./assets/images/illustration-thank-you.svg"
+          alt=""
+          aria-hidden="true"
+        >
+
+        <div class="card__rating-container">
+          <p class="card__rating-text">
+            You selected <span id="rating-text" aria-label="Selected rating out of 5">#</span> out of 5
+          </p>
+        </div>
+
+        <h2 class="card__title">Thank you!</h2>
+        <p class="card__text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+
+        <button id="rating-reset" type="button" class="btn btn--primary">
+          Reset
+        </button>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/roma-nikolaichuk/interactive-rating-component"
+        target="_blank"
+        >Roman Nikolaichuk</a
+      >.
+    </div> -->
+  </body>
+</html>
